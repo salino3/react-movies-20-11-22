@@ -6,9 +6,7 @@ const FirstPage = ({ first}) => {
   
   const [second, setSecond] = useState();
 
-  useEffect(() => {
-    setSecond(first);
-  }, [first]);
+
   // I receive the information, convert it to lowercase and insert it in 'setSecond'
   const handleChange = (event) => {
     let words = event.target.value.toLowerCase();
